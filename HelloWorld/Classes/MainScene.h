@@ -15,6 +15,15 @@ using namespace cocos2d;
 
 class MainScene: public Layer
 {
+private:
+    Sprite *sp;
+    ProgressTimer *pt;
+    Sprite* pb;
+    Sprite* zom;
+private:
+    void onMenuItem(Ref *ref);
+    void onCallFunc();
+    void update(float);
     
 public:
     virtual bool init();
